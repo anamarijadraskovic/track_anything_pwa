@@ -3,15 +3,12 @@ import { getDatabase } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    databaseURL: "https://track-anything-app-default-rtdb.europe-west1.firebasedatabase.app/"
+    databaseURL: CONFIG.DATABASE_URL
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app)
-
-console.log("app", app)
-console.log("database", database)
 
 let myLeads = []
 const inputEl = document.getElementById("input-el")
