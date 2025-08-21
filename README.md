@@ -1,24 +1,18 @@
-# 📌 Track Anything – Chrome Extension
+# 📌 Track Anything – Progessive Web App
 
-A simple Chrome extension built as part of the **Scrimba Frontend Developer Path**.
+This is Progessive Web App made from Chrome extension project.
+This project uses Firebase for storing data in Firebase database.
 
 ## 🚀 Features
 - Save and delete items  
-- Data persistence with **localStorage**  
+- Data persistence with Firebase database
 - Lightweight and easy to use  
 
 ## 🎯 What I Learned
-- Event listeners (`click`, `dblclick`)  
-- DOM manipulation (`innerHTML`, `input.value`)  
-- Template strings & parameters vs. arguments  
-- JSON (`stringify`, `parse`)  
-- `manifest.json` configuration  
-- Objects in arrays  
+- setup Firebase database
+-  getDatabase, ref, push, onValue, remove }
+- Objects methods (Object.keys(), Object.values() and Object.entries())
 
 ## 🛠️ Installation
-1. Download this repo as ZIP & extract  
-2. Go to `chrome://extensions/` in Chrome  
-3. Enable **Developer Mode**  
-4. Click **Load unpacked** → select the folder  
 
 ---
