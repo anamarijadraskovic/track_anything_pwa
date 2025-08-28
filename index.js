@@ -28,29 +28,24 @@ onValue(referenceInDB, function (snapshot) {
 })
 
 function render(leads) {
-    let listItems = ""
-    for (let i = 0; i < leads.length; i++) {
-        listItems += `
-            <li>
-                <a target='_blank' href='${leads[i]}'>
-                    ${leads[i]}
-                </a>
-            </li>
-        `
-    }
-    ulEl.innerHTML = listItems
+    ulEl.innerHTML = "";
+    leads.forEach((lead) => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+
+        a.target = "_blank";
+        a.href = lead;
+        a.textContent = lead;
+
+        li.appendChild(a);
+        ulEl.appendChild(li);
+    });
 }
 
 inputBtn.addEventListener("click", function () {
-    const value = inputEl.value.trim();
-
-    if (value) {
-        push(referenceInDB, value);
-        inputEl.value = "";
-    } else {
-        alert("Please enter a valid value before adding!");
-    }
-});
+    push(referenceInDB, inputEl.value)
+    inputEl.value = ""
+})
 
 deleteBtn.addEventListener("click", function () {
     remove(referenceInDB)
