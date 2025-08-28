@@ -37,7 +37,7 @@ While building this project, I practiced:
 ## 🛠️ Installation & Usage
 
 1. Open **[Track Anything](https://trackanything.netlify.app/)**
-2. Add it to your H**Home Screen** (on mobile) or install it as a **PWA** (on desktop via browser prompt)
+2. Add it to your **Home Screen** (on mobile) or install it as a **PWA** (on desktop via browser prompt)
 3. Start tracking your items 🎉
 
 ---
