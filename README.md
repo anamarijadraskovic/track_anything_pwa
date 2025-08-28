@@ -46,3 +46,12 @@ While building this project, I practiced:
 
 - **Built With:** JavaScript, Firebase, HTML, CSS
 - **Hosting:** Netlify
+
+---
+
+## 📸 Screenshot
+
+<div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+  <img src="./images/app_dark.png" alt="Dark Theme Screenshot" style="width: 45%; max-width: 300px;">
+  <img src="./images/app_light.png" alt="Light Theme Screenshot" style="width: 45%; max-width: 300px;">
+</div>
