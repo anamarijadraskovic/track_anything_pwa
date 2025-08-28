@@ -43,9 +43,15 @@ function render(leads) {
 }
 
 inputBtn.addEventListener("click", function () {
-    push(referenceInDB, inputEl.value)
-    inputEl.value = ""
-})
+    const value = inputEl.value.trim();
+
+    if (value) {
+        push(referenceInDB, value);
+        inputEl.value = "";
+    } else {
+        alert("Please enter a valid value before adding!");
+    }
+});
 
 deleteBtn.addEventListener("click", function () {
     remove(referenceInDB)
