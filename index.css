@@ -43,16 +43,15 @@ label {
     color: var(--color-primary);
     font-weight: 700;
     display: block;
-    margin-bottom: 6px;
+    margin-bottom: .5rem;
 }
 
 input {
     width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: .8rem;
     border: 1px solid var(--color-border);
     border-radius: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     background: var(--color-bg);
     color: var(--color-text);
 }
@@ -72,7 +71,7 @@ button {
 }
 
 button:hover {
-    filter: brightness(1.1);
+    filter: brightness(1.2);
 }
 
 #delete-btn {
@@ -81,13 +80,14 @@ button:hover {
 }
 
 ul {
-    margin-top: 20px;
+    margin-top: 1rem;
     list-style: none;
     padding-left: 0;
 }
 
 li {
-    margin-top: 6px;
+    padding: .5rem 0;
+    border-bottom: 1px solid var(--color-primary);
 }
 
 a {

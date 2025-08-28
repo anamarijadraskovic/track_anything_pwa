@@ -1,6 +1,7 @@
 # 📌 Track Anything
 
-A simple, lightweight Progressive Web App (PWA) to quickly save and manage items, originally built as a Chrome extension and later adapted into a standalone app.  
+A simple, lightweight Progressive Web App (PWA) to quickly save and manage items, originally built as a Chrome extension
+and later adapted into a standalone app.  
 All data is stored securely in Firebase Realtime Database.
 
 ---
@@ -11,6 +12,7 @@ All data is stored securely in Firebase Realtime Database.
 - Automatic data persistence via Firebase
 - Works seamlessly as a PWA on mobile and desktop
 - Lightweight, fast, and easy to use
+- Light/Dark theme toggle with smooth transitions
 
 ---
 
@@ -27,6 +29,8 @@ While building this project, I practiced:
 - **Web App Essentials**
     - Favicon setup
     - Web App Manifest for PWA installation
+    - Theme switching with CSS variables & `[data-theme]`
+    - Accessibility improvements (ARIA attributes, semantic HTML)
 
 ---
 

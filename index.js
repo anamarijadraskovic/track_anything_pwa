@@ -48,7 +48,6 @@ deleteBtn.addEventListener("click", function () {
 
 inputBtn.addEventListener("click", function () {
     push(referenceInDB, inputEl.value)
-    console.log(inputEl.value)
     inputEl.value = ""
 })
 
