@@ -16,9 +16,11 @@ const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 const deleteBtn = document.getElementById("delete-btn")
+const changeThemeBtn = document.getElementById("change-theme-btn");
+const root = document.documentElement;
 
 onValue(referenceInDB, function (snapshot) {
-    if(snapshot.exists()) {
+    if (snapshot.exists()) {
         const snapshotValues = snapshot.val()
         const leads = Object.values(snapshotValues)
         render(leads)
@@ -39,13 +41,23 @@ function render(leads) {
     ulEl.innerHTML = listItems
 }
 
-deleteBtn.addEventListener("dblclick", function() {
+deleteBtn.addEventListener("click", function () {
     remove(referenceInDB)
     ulEl.innerHTML = ""
 })
 
-inputBtn.addEventListener("click", function() {
+inputBtn.addEventListener("click", function () {
     push(referenceInDB, inputEl.value)
     console.log(inputEl.value)
     inputEl.value = ""
 })
+
+changeThemeBtn.addEventListener("click", () => {
+    if (root.getAttribute("data-theme") === "dark") {
+        root.removeAttribute("data-theme"); // back to light
+        localStorage.setItem("theme", "light");
+    } else {
+        root.setAttribute("data-theme", "dark");
+        localStorage.setItem("theme", "dark");
+    }
+});

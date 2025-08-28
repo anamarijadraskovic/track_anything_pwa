@@ -11,7 +11,8 @@
 
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Track Anything">
-    <meta property="og:description" content="Track Anything – a simple Progressive Web App (PWA) to quickly save, manage, and organize your items with Firebase.">
+    <meta property="og:description"
+          content="Track Anything – a simple Progressive Web App (PWA) to quickly save, manage, and organize your items with Firebase.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://trackanything.netlify.app/">
     <meta property="og:image" content="https://trackanything.netlify.app/images/android-chrome-192x192.png">
@@ -19,7 +20,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Track Anything">
-    <meta name="twitter:description" content="Track Anything – a simple Progressive Web App (PWA) to quickly save, manage, and organize your items with Firebase.">
+    <meta name="twitter:description"
+          content="Track Anything – a simple Progressive Web App (PWA) to quickly save, manage, and organize your items with Firebase.">
     <meta name="twitter:image" content="https://trackanything.netlify.app/images/android-chrome-192x192.png">
 
     <!-- Favicons -->
@@ -40,13 +42,17 @@
 </head>
 
 <body>
-    <label>Enter URL:</label>
+<button id="change-theme-btn">Change theme</button>
+<main>
+    <label for="input-el">Enter URL:</label>
     <input type="text" id="input-el" placeholder="https://drasko-password-generator.firebaseapp.com/">
     <button id="input-btn">SAVE INPUT</button>
     <button id="delete-btn">DELETE ALL</button>
     <ul id="ul-el">
     </ul>
-    <script src="config.js"></script>
-    <script type="module" src="index.js"></script>
+</main>
+
+<script src="config.js"></script>
+<script type="module" src="index.js"></script>
 </body>
 </html>
