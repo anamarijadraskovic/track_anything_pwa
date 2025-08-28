@@ -41,14 +41,20 @@ function render(leads) {
     ulEl.innerHTML = listItems
 }
 
+inputBtn.addEventListener("click", function () {
+    const value = inputEl.value.trim();
+
+    if (value) {
+        push(referenceInDB, value);
+        inputEl.value = "";
+    } else {
+        alert("Please enter a valid value before adding!");
+    }
+});
+
 deleteBtn.addEventListener("click", function () {
     remove(referenceInDB)
     ulEl.innerHTML = ""
-})
-
-inputBtn.addEventListener("click", function () {
-    push(referenceInDB, inputEl.value)
-    inputEl.value = ""
 })
 
 changeThemeBtn.addEventListener("click", () => {
