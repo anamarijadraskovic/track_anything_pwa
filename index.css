@@ -102,7 +102,7 @@ a:hover {
 #change-theme-btn {
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 0;
     width: auto;
     padding: 0.5rem 1rem;
     background-color: inherit;
