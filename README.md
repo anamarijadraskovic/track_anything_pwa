@@ -41,4 +41,4 @@ While building this project, I practiced:
 ## 📂 Project Info
 
 - **Built With:** JavaScript, Firebase, HTML, CSS
-- **Hosting:** Netlify
+- **Hosting:** Firebase
