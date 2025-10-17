@@ -32,7 +32,7 @@ While building this project, I practiced:
   - Theme switching with CSS variables & `[data-theme]`
   - Accessibility improvements (ARIA attributes, semantic HTML)
 
----
+Finally, this project was optimized for maximum efficiency, scoring a perfect 100 in all Lighthouse categories (Performance, Accessibility, Best Practices, and SEO).
 
 ## 🛠️ Installation & Usage
 
