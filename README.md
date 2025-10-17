@@ -21,16 +21,16 @@ All data is stored securely in Firebase Realtime Database.
 While building this project, I practiced:
 
 - **Firebase**
-    - `initializeApp`, `getDatabase`, `ref`, `push`, `onValue`, `remove`
-    - Handling snapshots with `snapshot.val()`
+  - `initializeApp`, `getDatabase`, `ref`, `push`, `onValue`, `remove`
+  - Handling snapshots with `snapshot.val()`
 - **JavaScript**
-    - Object methods: `Object.keys()`, `Object.values()`, `Object.entries()`
-    - ES Modules: `import/export`
+  - Object methods: `Object.keys()`, `Object.values()`, `Object.entries()`
+  - ES Modules: `import/export`
 - **Web App Essentials**
-    - Favicon setup
-    - Web App Manifest for PWA installation
-    - Theme switching with CSS variables & `[data-theme]`
-    - Accessibility improvements (ARIA attributes, semantic HTML)
+  - Favicon setup
+  - Web App Manifest for PWA installation
+  - Theme switching with CSS variables & `[data-theme]`
+  - Accessibility improvements (ARIA attributes, semantic HTML)
 
 ---
 

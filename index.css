@@ -1,112 +1,111 @@
 :root {
-    --color-primary: #5f9341;
-    --color-primary-contrast: #ffffff;
-    --color-bg: #ffffff;
-    --color-text: #424B54;
-    --color-border: var(--color-primary);
+  --color-primary: #5f9341;
+  --color-primary-contrast: #ffffff;
+  --color-bg: #ffffff;
+  --color-text: #424b54;
+  --color-border: var(--color-primary);
 }
 
 [data-theme="dark"] {
-    --color-primary: #8fdc6a;
-    --color-primary-contrast: #1e1e1e;
-    --color-bg: #424B54;
-    --color-text: white;
-    --color-border: var(--color-primary);
+  --color-primary: #8fdc6a;
+  --color-primary-contrast: #1e1e1e;
+  --color-bg: #424b54;
+  --color-text: white;
+  --color-border: var(--color-primary);
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    width: 100%;
-    background: var(--color-bg);
-    color: var(--color-text);
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    margin-top: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  background: var(--color-bg);
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 4rem;
 }
 
-
-body, input, button {
-    transition: background 0.3s ease,
-    color 0.3s ease,
-    border 0.3s ease;
+body,
+input,
+button {
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
 label {
-    color: var(--color-primary);
-    font-weight: 700;
-    display: block;
-    margin-bottom: .5rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 input {
-    width: 100%;
-    padding: .8rem;
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
-    margin-bottom: 1rem;
-    background: var(--color-bg);
-    color: var(--color-text);
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
 input:focus {
-    outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--color-primary);
 }
 
 button {
-    background: var(--color-primary);
-    color: var(--color-primary-contrast);
-    padding: .8rem 1.6rem;
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-right: 1rem;
+  background: var(--color-primary);
+  color: var(--color-primary-contrast);
+  padding: 0.8rem 1.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 1rem;
 }
 
 button:hover {
-    filter: brightness(1.2);
+  filter: brightness(1.2);
 }
 
 #delete-btn {
-    background: var(--color-bg);
-    color: var(--color-primary);
+  background: var(--color-bg);
+  color: var(--color-primary);
 }
 
 ul {
-    margin-top: 1rem;
-    list-style: none;
-    padding-left: 0;
+  margin-top: 1rem;
+  list-style: none;
+  padding-left: 0;
 }
 
 li {
-    padding: .5rem 0;
-    border-bottom: 1px solid var(--color-primary);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-primary);
 }
 
 a {
-    color: var(--color-primary);
-    text-decoration: none;
+  color: var(--color-primary);
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #change-theme-btn {
-    position: absolute;
-    top: 1rem;
-    right: 0;
-    width: auto;
-    padding: 0.5rem 1rem;
-    background-color: inherit;
-    color: var(--color-text);
-    letter-spacing: .5px;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  width: auto;
+  padding: 0.5rem 1rem;
+  background-color: inherit;
+  color: var(--color-text);
+  letter-spacing: 0.5px;
 }
