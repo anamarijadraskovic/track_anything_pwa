@@ -34,6 +34,18 @@ window.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
+  function sanitizeURL(url) {
+    try {
+      const parsed = new URL(url);
+      if (parsed.protocol === "http:" || parsed.protocol === "https:") {
+        return url;
+      }
+    } catch (e) {
+      console.error("Invalid url");
+    }
+    return "#";
+  }
+
   function render(leads) {
     ulEl.innerHTML = "";
     leads.forEach((lead) => {
@@ -41,7 +53,7 @@ window.addEventListener("DOMContentLoaded", async () => {
       const a = document.createElement("a");
       a.target = "_blank";
       a.href = lead;
-      a.textContent = lead;
+      a.textContent = sanitizeURL(lead);
       li.appendChild(a);
       ulEl.appendChild(li);
     });
@@ -50,6 +62,11 @@ window.addEventListener("DOMContentLoaded", async () => {
   // Save input
   inputBtn.addEventListener("click", () => {
     const value = inputEl.value.trim();
+    if (!/^https?:\/\//i.test(value)) {
+      alert("Only HTTP/HTTPS URLs are allowed!");
+      return;
+    }
+
     if (value) {
       push(referenceInDB, value);
       inputEl.value = "";
