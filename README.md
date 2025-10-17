@@ -4,8 +4,6 @@ A simple, lightweight Progressive Web App (PWA) to quickly save and manage items
 and later adapted into a standalone app.  
 All data is stored securely in Firebase Realtime Database.
 
----
-
 ## 🚀 Features
 
 - Save and delete items instantly
@@ -13,8 +11,6 @@ All data is stored securely in Firebase Realtime Database.
 - Works seamlessly as a PWA on mobile and desktop
 - Lightweight, fast, and easy to use
 - Light/Dark theme toggle with smooth transitions
-
----
 
 ## 📚 What I Learned
 
@@ -40,14 +36,10 @@ Finally, this project was optimized for maximum efficiency, scoring a perfect 10
 2. Add it to your **Home Screen** (on mobile) or install it as a **PWA** (on desktop via browser prompt)
 3. Start tracking your items 🎉
 
----
-
 ## 📂 Project Info
 
 - **Built With:** JavaScript, Firebase, HTML, CSS
 - **Hosting:** Netlify
-
----
 
 ## 📸 Screenshot
 
